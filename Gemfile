@@ -8,7 +8,7 @@ end
 gem 'minitest', group: :test
 gem 'minitest-reporters', group: :test
 gem 'rails-controller-testing'
-
+gem 'bcrypt',         '3.1.12'
 gem 'bootstrap-sass', '3.3.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
