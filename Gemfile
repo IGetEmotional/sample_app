@@ -9,6 +9,11 @@ gem 'minitest', group: :test
 gem 'minitest-reporters', group: :test
 gem 'rails-controller-testing'
 gem 'bcrypt',         '3.1.12'
+
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'rails-ujs', '~> 0.1.0'
+
+
 gem 'bootstrap-sass', '3.3.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
