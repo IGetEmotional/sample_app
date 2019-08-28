@@ -28,7 +28,7 @@ malory:
   activated_at: <%= Time.zone.now %>
 
 chara:
-  name: Sasha
+  name: Chara
   email: chara@example.com
   password_digest: <%= User.digest('password') %>
   admin: true
