@@ -10,7 +10,7 @@ gem 'minitest-reporters', group: :test
 gem 'rails-controller-testing'
 gem 'bcrypt',         '3.1.12'
 gem 'faker'         
-
+gem 'aws-sdk', '~> 2'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'rails-ujs', '~> 0.1.0'
 gem 'will_paginate'
