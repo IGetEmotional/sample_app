@@ -13,7 +13,7 @@ include CarrierWave::MiniMagick
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  storage :aws
+  #storage :file
   # storage :fog
 
    def cache_dir
@@ -29,6 +29,7 @@ include CarrierWave::MiniMagick
   def extension_whitelist
     %w(jpg jpeg gif png)
   end
+
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url(*args)
