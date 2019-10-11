@@ -63,6 +63,20 @@ class UsersController < ApplicationController
     render 'show_follow' 
   end
 
+  def search  
+    if params[:search].blank?  
+redirect_to(root_path) and  flash[:info] =  "Empty field!" and return   
+  else  
+    @parameter = params[:search]  
+    #@users = User.all.where("lower(name) ILIKE :search", search: @parameter)  
+    @users = User.all.where("lower(name) ILIKE :search", search: "%#{@parameter}%") 
+    render 'search'
+  end  
+end
+    
+
+
+
   private
 
   def user_params

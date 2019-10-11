@@ -12,6 +12,8 @@ get    '/signup',    to: 'users#new'
 get    '/login',     to: 'sessions#new'
 post   '/login',     to: 'sessions#create'
 delete '/logout',    to: 'sessions#destroy'
+ #...
+get    'search',     to: 'users#search'
 
   resources :users do
     member do
